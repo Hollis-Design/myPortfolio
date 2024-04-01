@@ -1,0 +1,41 @@
+Query #1.
+INSERT INTO clients
+	(clientFirstname, clientLastname, clientEmail, clientPassword, comments)
+VALUES
+	('Tony', 'Stark', 'tony@starkent.com', 'Iam1ronM@n', '"I am the real Ironman"')
+
+Query #2.
+UPDATE
+	clients
+SET
+	clientLevel = 3
+WHERE
+	clientFirstname = 'Tony' AND clientLastname = 'Stark'
+
+
+Query #3
+UPDATE 
+	inventory
+SET
+	invName = replace(invName, 'Nylon Rope', 'Climbing Rope'),
+    invDescription = replace(invDescription, 'nylon rope', 'climbing rope')
+
+
+Query #4.
+SELECT inventory.invName, categories.categoryName
+FROM inventory
+INNER JOIN categories ON
+	inventory.categoryId = categories.categoryId
+WHERE
+	inventory.categoryId = 3
+
+
+Querey #5.
+DELETE
+FROM inventory
+WHERE
+  invName = 'Koenigsegg CCX car'
+
+
+
+https://youtu.be/IMAbmnWmeFU

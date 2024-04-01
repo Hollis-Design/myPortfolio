@@ -1,0 +1,97 @@
+@media only screen and (min-width: 37.5em) {
+/* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+  header, nav, main, footer {
+    max-width: 64em;/* the comma means apply the following CSS declarations to all of the listed elements */
+  }
+
+  /*-------------- Header ----------------*/
+  header h1 {
+    font-size: 200%;
+    margin-left: 0%;
+    text-align: center;
+  }
+
+  header .subheading {
+    font-size: 120%;
+    margin-left: 0%;
+    text-align: center;
+  }
+
+  header figure.logo img{
+    width: 15%;
+  }
+
+  /*********** Navigation ****************/
+  nav button { display:none; }  /* hamburger button does not need to be shown */
+
+  nav{
+    background: #6bb18e; /* Old browsers */
+    background: -moz-linear-gradient(top, #6bb18e 0%, #3b6d4e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #6bb18e 0%,#3b6d4e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #6bb18e 0%,#3b6d4e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6bb18e', endColorstr='#3b6d4e',GradientType=0 ); /* IE6-9 */
+  }
+
+  nav ul {
+    margin-left: 2%;
+    /*same margin as the rest of page */
+  }
+
+  nav ul li{
+    float: left; /*get menu items to line up in a row */
+      /*  border-right: 1px solid black; */
+  }
+
+  nav ul li a{
+    border: none;
+    border-right: 1px solid rgba(0,0,0,.3);
+    color: black;
+    padding: .8rem 1rem;
+    text-decoration: none;
+  }
+
+  nav ul.hide{display: block;}
+
+/*---------------- Main -----------------*/
+
+  main figure img {
+    width: 50%;
+    float:left;
+    margin: 0 2% 0 0;
+  }
+
+  main section::after{
+    content: "";
+    clear: both;
+    display: table
+  }
+
+  main section.forecast {
+    display: block;
+    max-width: 64em;
+  }  /* show the 10-day forecast with the medium view and up */
+
+
+  table, th, td {
+    border: 1px solid #666666;
+    border-collapse: collapse;
+    text-align: left;
+    padding-bottom: .5em;
+    padding-top: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: auto;
+  }
+
+  article p.town-article img {
+    width: 62.666%;
+    float:right;
+  } /* responsive images */
+
+  article p.town-article::after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+}

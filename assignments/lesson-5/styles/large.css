@@ -1,0 +1,50 @@
+@media only screen and (min-width: 64em) {
+/* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+
+article p.town-article img { width: 29.333%; }
+
+header, nav, main, footer {
+max-width: none;/* the comma means apply the following CSS declarations to all of the listed elements */
+/* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+main figure img {
+width: 90%;
+height: 200px;
+margin-left: 5%;
+
+} /* responsive images */
+
+main figure::after{
+content: "";
+clear: both;
+display: table;
+}
+
+/* main section div.current::after{
+content: "";
+clear: both;
+display: block;
+}
+*/
+
+main section div {
+display: inline-block;
+width: 30%;
+height: 75px;
+margin: 1em;
+}
+
+
+main section div.current{
+margin-left: 0;
+text-align: center;
+}
+
+main section.forecast {
+display: block;
+max-width: none;
+}  /* show the 10-day forecast with the medium view and up */
+
+}
+© 2018 GitHub, Inc.

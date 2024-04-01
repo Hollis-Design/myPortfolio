@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Mountain Spoke</title>
+        <meta name="author" content="Christy Hollis">
+        <meta name="description" content="Everything Mountain biking tours and rentals in Bozeman, Montana">
+        <!-- external style references in the proper cascading order -->
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">   <!-- Google API font reference -->
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main-7.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+
+    </head>
+
+    <body onload="todaydate()">
+        <header>
+            <div class="headerItems">
+                <figure class="icon">
+                    <picture>
+                        <source srcset="images/small.png" media="(max-width: 37.5em)">
+                        <source srcset="images/medium.png" media="(max-width: 64em)">
+                        <source srcset="images/large.png">
+                        <img src="images/large.png" alt="Weather Logo">
+                    </picture>
+                    <!--<a href="index.html"><img src="images/mtspoke-icon.png" alt="Weather Logo"></a> -->
+                </figure>
+
+                <div class="title">
+                    <h1>The Mountain Spoke</h1>
+                    <div class="subheading">Everything Mountain Bikes in Bozeman, Montana</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- site navigation use placeholder references -->
+        <nav>
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adventureToursPage.html">Adventure Tours</a></li>
+                <li class="active"><a href="eventPage.html">Events</a></li>
+                <li><a href="salesPage.html">Sales</a></li>
+                <li><a href="servicePage.html">Service</a></li>
+                <li><a href="contactPage.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Registration for Cycle the Continental Divide</h2>
+            <form action="thanks2.html" name="storm" id="weatherEvent">
+                <fieldset>
+                    <legend><span>Personal Information</span></legend>
+                    <label><span>Full Name:</span><input  type="text" pattern="[A-Za-z -._]{5,99}" title="Name must be 5 characters in length" placeholder="Full Name" required></label>
+                    <label><span>Email:</span><input name="email" type="email" value="" placeholder="zen@gmail.com"></label>
+                    <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="1235551234" required></label>
+                    <label><span>Date of Birth:</span><input name="birthDate" type="date"></label>
+                    <label><span>Home State or Country:</span>
+                        <input type="text" name="stateCountry" list="s-type">
+                        <datalist id="s-type">
+                            <option value="Alabama"></option>
+                            <option value="Alaska"></option>
+                            <option value="Arizona"></option>
+                            <option value="Arkansas"></option>
+                            <option value="California"></option>
+                            <option value="Colorado"></option>
+                            <option value="Connecticut"></option>
+                            <option value="Delaware"></option>
+                            <option value="Florida"></option>
+                            <option value="Georgia"></option>
+                            <option value="Hawaii"></option>
+                            <option value="Idaho"></option>
+                            <option value="Illinois"></option>
+                            <option value="Indiana"></option>
+                            <option value="Iowa"></option>
+                            <option value="Kansas"></option>
+                            <option value="Kentucky"></option>
+                            <option value="Louisiana"></option>
+                            <option value="Maine"></option>
+                            <option value="Maryland"></option>
+                            <option value="Massachusetts"></option>
+                            <option value="Michigan"></option>
+                            <option value="Minnesota"></option>
+                            <option value="Mississippi"></option>
+                            <option value="Missouri"></option>
+                            <option value="Montana"></option>
+                            <option value="Nebraska"></option>
+                            <option value="Nevada"></option>
+                            <option value="New Hampshire"></option>
+                            <option value="New Jersey"></option>
+                            <option value="New Mexico"></option>
+                            <option value="New York"></option>
+                            <option value="North Carolina"></option>
+                            <option value="North Dakota"></option>
+                            <option value="Ohio"></option>
+                            <option value="Oklahoma"></option>
+                            <option value="Oregon"></option>
+                            <option value="Pennsylvania"></option>
+                            <option value="Rhode Island"></option>
+                            <option value="South Carolina"></option>
+                            <option value="South Dakota"></option>
+                            <option value="Tennessee"></option>
+                            <option value="Texas"></option>
+                            <option value="Utah"></option>
+                            <option value="Vermont"></option>
+                            <option value="Virginia"></option>
+                            <option value="Washington"></option>
+                            <option value="West Virginia"></option>
+                            <option value="Wisonsin"></option>
+                            <option value="Wyoming"></option>
+                        </datalist>
+                    </label>
+                    <label><span>Special Accommodations/Comments:</span>
+                        <textarea name="comments" rows="10" cols="30"></textarea>
+                    </label>
+                </fieldset>
+                <input type="submit" value="Submit" class="submitBtn">
+            </form>
+        </main>
+
+        <footer>
+            <aside>
+                Mountain Spoke &#9734;
+                123 Main St. &#9734;
+                Bozeman, MT 59715<br>
+                (406)518-9418 &#9734;
+                Info@MtSpoke.com<br>
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved | Mountain Spoke | <span id="dateToday"></span></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+
+    </body>
+    </html>

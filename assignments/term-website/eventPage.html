@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Mountain Spoke</title>
+        <meta name="author" content="Christy Hollis">
+        <meta name="description" content="Everything Mountain biking tours and rentals in Bozeman, Montana">
+        <!-- external style references in the proper cascading order -->
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">   <!-- Google API font reference -->
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main-7.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+
+    </head>
+
+    <body onload="todaydate()">
+        <header>
+            <div class="headerItems">
+                <figure class="icon">
+                    <picture>
+                        <source srcset="images/small.png" media="(max-width: 37.5em)">
+                        <source srcset="images/medium.png" media="(max-width: 64em)">
+                        <source srcset="images/large.png">
+                        <img src="images/large.png" alt="Weather Logo">
+                    </picture>
+                    <!--<a href="index.html"><img src="images/mtspoke-icon.png" alt="Weather Logo"></a> -->
+                </figure>
+
+                <div class="title">
+                    <h1>The Mountain Spoke</h1>
+                    <div class="subheading">Everything Mountain Bikes in Bozeman, Montana</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- site navigation use placeholder references -->
+        <nav>
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adventureToursPage.html">Adventure Tours</a></li>
+                <li class="active"><a href="#">Events</a></li>
+                <li><a href="salesPage.html">Sales</a></li>
+                <li><a href="servicePage.html">Service</a></li>
+                <li><a href="contactPage.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <article class="cycleDivideEvent">
+                <h2>Cycle the Continental Divide</h2>
+                <h3>July 9 - 14, 2018</h3>
+            </article>
+            <div class= "eventInfo">
+                <ul>
+                    <li>Dates: July 9-14, 2018</li>
+                    <li>Cost: $1,300</li>
+                    <li><strong>Basic Requirements:</strong>Happy attitude, bike, helmet, intermediate+ experience cycling</li>
+                    <li><strong>Route:</strong>"We’ll travel from the lively resort town of Whitefish, located near Glacier National Park, to the southern end of the spectacular Swan Range, one of Montana’s less-visited geologic gems. Riding mostly on U.S. Forest Service roads and a bit of singletrack, we’ll experience the high country of one of the world’s great wildland complexes. Along the way, we’ll encounter a variety of flora and fauna. We’ll skirt the southern boundaries of the Bob Marshall and Scapegoat wilderness areas and crest the Continental Divide on a loop near Lincoln, our ultimate destination." (Adventure Cycling Association)</li>
+                    <li> <a href="registerPage.html">Register Now</a></li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <aside>
+                Mountain Spoke &#9734;
+                123 Main St. &#9734;
+                Bozeman, MT 59715<br>
+                (406)518-9418 &#9734;
+                Info@MtSpoke.com<br>
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved | Mountain Spoke | <span id="dateToday"></span></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+
+    </body>
+    </html>

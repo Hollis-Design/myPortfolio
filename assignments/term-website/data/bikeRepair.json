@@ -1,0 +1,9 @@
+{"repairs": [
+    {"type": "Basic Tune Up", "price": 79},
+    {"type": "Deluxe Tune Up", "price": 100},
+    {"type": "Super Overhaul", "price": 199},
+    {"type": "Flat Repair", "price": 15},
+    {"type": "Install Tire with New Tube", "price": 15},
+    {"type": "Install New Shift or Brake Cable", "price": 15}
+]
+}

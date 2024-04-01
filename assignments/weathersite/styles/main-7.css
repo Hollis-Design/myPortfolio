@@ -1,0 +1,256 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {box-sizing: border-box;}
+/* This wildcard applies to all elements ensuring a box layout model */
+
+/***************** Body **********************/
+body {
+
+    font-family: 'Bree Serif', serif;
+    font-size: 16px;
+    padding: .5rem 2%;
+    /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer {
+    max-width:  37.5em;
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+/**************** Header **********************/
+.headerItems {
+    background-color: #33654C;
+    padding: .5rem 2%;
+    color: white;
+
+    font-family: 'Bree Serif', serif;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+header h1 {
+    font-size: 175%;
+/*    margin-left: 17%;*/
+}
+
+
+header .subheading {
+    font-size: 120%;
+/*    margin-left: 17%; */
+}
+
+/***************** Navigation *********************/
+nav {
+    background-color: #6BB18E;
+}
+
+nav button {
+ /*   margin: .2rem 2%; */
+    margin: 0 0 0 0;
+    align-self: flex-start;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #555555;
+}
+
+li{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: space-around;
+    padding: .8rem 2%;
+    border-top: 1px solid rgba(0,0,0,.3);
+}
+
+nav ul {
+    list-style-type: none; /*get rid of bullets */
+    padding: 0; /*get rid of padding at the top */
+    margin: 0; /*get rid of margin on the side */
+}
+
+
+nav ul li a {
+    color: #000000; /*black color */
+    text-decoration: none;
+  /*border-top: 1px solid rgba(0,0,0,.3); /*lines at the top of each menu block; rgba - 000, darkens lines by .3 or 30% */
+
+}
+
+nav ul li.active a {
+    background-color: rgba(0,0,0,.2);
+    color: #FFFFFF;
+}
+
+nav ul li a:hover {
+    color: rgba(0,0,0,.4);
+}
+
+nav ul.hide{display: none;}
+
+/****************** Main ***************************/
+body{
+    font-size: 85%;
+}
+
+main h2, h3, h4 {
+    background-color: #C8C8C8;
+    color: #33654C;
+    padding: .5em;
+    text-align: center;
+    font-size: 105%;
+}
+
+main figure {
+    margin: 0 0 .2rem 2%;
+    width:96%;
+}
+
+main figure img {
+    width: 100%;
+}
+
+.summary {
+    margin: 0 2% 0 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+
+.highlow {
+   order: -1;
+}
+
+.tonight {
+    text-align: justify;
+}
+
+.forecast{
+    display: none;
+}
+
+
+article p.town-article img {
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: 96%; /* fill the page in the small/phone view */
+    margin: 0 0 .2rem 2%;
+}
+
+/******************* Main For Gallery *****************/
+.weatherPics{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 5px;
+}
+
+.weatherPics img{
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/****************** Main For Home Page ********************/
+
+main article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5rem;
+    margin: 2%;
+    border: #653933 solid 1px;
+
+}
+
+main article img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#frank, #greenie, #spring{
+    width: 100%;
+    text-align: center;
+}
+
+.cities img {
+    width: 96%;
+}
+
+/****************** Main For Storm Center Form *************/
+
+form#weatherEvent{
+    margin: 1em 3%;
+}
+
+fieldset{
+    background-color: #C8C8C8;
+    border-radius: .8em;
+    margin: 1.5em 0;
+    border: #653933 solid 1px;
+}
+
+legend{
+    margin-left: 6%;
+    padding: .5em;
+    border: #653933 solid 1px;
+    background-color: #C8C8C8;
+    color: #33654C;
+    border-radius: .4em;
+}
+
+label{
+    display: block;
+    margin: .5em;
+}
+
+label span {
+    display: block;
+    font-size: .8em;
+    color: #33654C;
+    padding-top: .9em;
+    padding-bottom: .2em;
+}
+
+#ratingvalue {
+    color: #33654C;
+}
+
+input.submitBtn {
+    color: #fff;
+    border: solid 1px #111;
+    border-radius: 7px;
+    width: 50%;
+    margin: .5em 0;
+    font-size: 1em;
+    font-family: 'Bree Serif', serif;
+    padding: .6em;
+    background: #653933;
+    box-shadow: 4px 4px 10px #666;
+}
+
+/******************* Footer ***************************/
+footer {
+    font-family: 'Bree Serif', serif;
+    background-color: #653933;
+    text-align: center;
+    padding: .5rem;
+    color: white;
+    font-family: Georgia;
+}
+
+footer aside {
+    font-family: 'Bree Serif', serif;
+    font-size: 85%;
+}
+
+footer>p {
+    font-size: 70%;
+    color: black;
+    font-family: 'Bree Serif', serif;
+}

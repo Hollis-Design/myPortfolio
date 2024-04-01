@@ -1,0 +1,115 @@
+@media only screen and (min-width: 37.5em) {
+/* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+header, nav, main, footer {
+max-width: 64em;/* the comma means apply the following CSS declarations to all of the listed elements */
+/* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+nav button { display:none; }  /* hamburger button does not need to be shown */
+
+main figure img {
+width: 50%;
+float:left;
+} /* responsive images */
+
+main section::after{
+content: "";
+clear: both;
+display: table
+}
+
+.current{
+margin: 0 0 0 0;
+text-align: center;
+}
+
+main section.forecast {
+display: block;
+max-width: 64em;
+}  /* show the 10-day forecast with the medium view and up */
+
+
+table, th, td {
+border: 1px solid #666666;
+border-collapse: collapse;
+text-align: left;
+padding-bottom: .5em;
+padding-top: .5em;
+padding-left: 1em;
+padding-right: 1em;
+margin-left: 10%;
+}
+
+article p.town-article img {
+width: 62.666%;
+float:right;
+} /* responsive images */
+
+article p.town-article::after{
+content: "";
+clear: both;
+display: table;
+}
+
+ul {                            /*Removes bullets, padding, and margin */
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #6BB18E;
+}
+
+li{
+float: left;
+border-right: 1px solid black;
+}
+
+li:last-child{
+border-right: none;
+}
+
+li a{
+display: block;
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover{
+background-color: white;
+}
+
+.active{
+background-color: #33654C;
+}
+
+main {
+width: 100%;
+margin: 0 0 0 0;
+}
+
+/* main figure img {
+float: left;
+width: 30%;
+overflow: auto;
+}
+main section {
+margin-left: 30%;
+overflow: auto;
+}
+main section.forecast {
+left: clear;
+margin: 0 0 0 0;
+}
+/*section
+{
+display: -webkit-inline-flex;
+/*display: inline-block;
+width: 50%;
+height: auto;
+margin: 1em;
+} */
+
+}

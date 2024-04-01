@@ -1,0 +1,176 @@
+@media only screen and (min-width: 37.5em) {
+/* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+header, nav, main, footer {
+    max-width: 64em;/* the comma means apply the following CSS declarations to all of the listed elements */
+ }
+body{
+    font-size: 100%;
+    background-color: white;
+}
+
+  /*-------------- Header ----------------*/
+    .headerItems {
+        padding: .5em 0;
+        margin-bottom: 0;
+        text-align: center
+            /* display: flex;
+            align-items:flex-end; */
+    }
+
+    .title h1 {
+        padding: 0;
+        margin: 0;
+        color: black;
+        font-family: 'Tangerine', serif;
+        font-size: 600%;
+    }
+
+    header .subheading {
+        font-family: 'Lato', sans-serif;
+        font-size: 150%;
+        text-shadow: 0px 0px 0px;
+        color: black;
+        padding: 0 0 .2em 0;
+    }
+  /*********** Navigation ****************/
+  nav button { display:none; }  /* hamburger button does not need to be shown */
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /*get rid of bullets */
+       /* padding: .8rem 1rem; /*get rid of padding at the top */
+    }
+
+
+    nav ul.hide{
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: stretch;
+      justify-content: flex-start;
+    }
+
+    li {
+        border-bottom: 1px solid rgba(0,0,0,.3);
+        border-top: none;  
+        padding: .5em .2em 0 .2em;
+        font-size: 120%;
+    }
+
+    nav ul li a{
+      /*  border-collapse: collapse; */
+        color: black;
+        font-size: 80%;
+        padding: .2em .8em .2em .8em;
+        padding-bottom: 0;
+        text-decoration: none;
+    }
+
+
+    li:last-child{
+        border-right: none;
+    }
+
+
+/***************** Main **********************/
+    main h2{
+        font-size: 150%;
+    }
+
+    h3, h4{
+        font-size: 120%;
+    }
+
+/****************** Main For Home Page ********************/
+       div.websiteBody1 {
+        margin-top: .2em;
+    }
+
+    .options {
+        display: flex;
+        align-items: baseline;
+    }
+
+  /*  main div.websiteBody1, div.websiteBody2 {
+        display: ;
+        flex-direction: row;
+        align-content:space-around;
+    }*/
+
+    .boutt img, .corsage img, .arrangement img, .wedding img{
+        width: 98%;
+    }
+
+    .boutt, .corsage, .arrangement, .wedding {
+        position: relative;
+        text-align: center;
+    }
+
+    div.transbox {
+        margin: 30px;
+        background-color: #ffffff;
+        border: 1px solid black;
+        opacity: 0.6;
+        filter: alpha(opacity=60); /* For IE8 and earlier */
+    }
+
+    .thumbnail {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /*   margin: 30px;  */
+        padding: 3%;
+        background-color: #ffffff;
+        border: 2px solid black;
+        opacity: 0.6;
+        filter: alpha(opacity=60); /* For IE8 and earlier */
+        color: black;
+    }
+
+/****************** Flower Picture Pages *****************************/
+
+    .flowerPics {
+        margin: 0 0;
+        padding: 0 0;
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+
+    .flowerPics img {
+    }
+
+/******************* About and Contact Page ***************************/
+
+    .formInfo {
+        display: flex;
+
+    }
+
+    .map{
+        margin: 1% 0;
+    }
+
+    fieldset{
+        /*   background-color: #C8C8C8; */
+        border-radius: .8em;
+        border: #653933 solid 1px;
+        margin: 0;
+    }
+
+    .contact {
+        margin: 1% 2%;
+        flex-basis: 50%;
+    }
+
+    .about {
+        margin: 1% 2%;
+        flex-basis: 50%;
+    }
+}

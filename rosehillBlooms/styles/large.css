@@ -1,0 +1,60 @@
+@media only screen and (min-width: 64em) {
+/* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+
+  header, nav, main, footer {
+    max-width: 1280px;
+    margin: auto;/* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+  }
+
+/************ Navigation **********************/
+    nav{
+      font-size: 100%;
+    }
+
+    nav ul li a{
+    padding: .6rem 1rem;
+  }
+
+/********************* Header **********************/
+
+
+/***************** Main *****************************/
+    body{
+        font-size: 120%;
+    }
+
+   main h2{
+        font-size: 180%;
+    }
+
+    main h3{
+        font-size: 150%;
+    }
+}
+
+
+/**************** Flower Picture Display *************/
+  /*  .flowerPics {
+        margin: 0;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+
+    .flowerPics img {
+        height: 95%;
+    }
+*/
+
+/******************* Contact Us **********************/
+ /*   .formInfo{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+
+    fieldset {
+        flex-basis: 50%;
+    }
+*/

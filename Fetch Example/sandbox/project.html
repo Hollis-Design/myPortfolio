@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSE 121b | Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+  <nav>
+    <ul id="menu">
+      <li><a id="toggleMenu">&equiv;</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="w01-task.html">W1 Task</a></li>
+      <li><a href="w03-task.html">W3 Task</a></li>
+      <li><a href="w04-task.html">W4 Task</a></li>
+      <li><a href="w05-task.html">W5 Task</a></li>
+      <li><a href="project.html" class="active">Project</a></li>
+    </ul>
+  </nav>
+  <main id="gridly">
+    <h1>Project</h1>
+    <h2>Disney Characters</h2>
+
+    <select id="filtered" title="Choose a data filter.">
+      <option value="" disabled selected>Filter Characters</option>
+      <option value="all">All Characters</option>
+      <option value="tvShow">TV Shows</option>
+      <option value="videoGame">Video Games</option>
+      <option value="film">Movies</option>
+      <option value="shortFilm">Short Films</option>
+      <option value="parkAttraction">Disney Park Attractions</option>
+    </select>
+
+    <div id="characters">
+    </div>
+  </main>
+
+
+  <footer>
+    &copy;<span id="year"></span> | Project - Disney Characters | CSE 121b
+  </footer>
+  <script src="../scripts/main.js"></script>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+  <script src="project.js"></script>
+</body>
+
+</html>

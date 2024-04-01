@@ -1,0 +1,64 @@
+@media only screen and (min-width: 64em) {
+/* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+
+ /* header, nav, main, footer {
+    max-width: none;/* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+  
+
+/************ Navigation **********************/
+  nav{
+    font-size: 100%;
+  }
+
+  nav ul li a{
+   /* padding: .6rem 1rem; */
+  }
+   
+  /**************** main *****************************/
+  main li {
+    font-size: 115%;
+  }
+  
+  main .get_it_now h2 {
+    margin-top: 0;
+  }
+  
+  ul.reviews{
+    line-height: 1.4;
+  }
+  
+  ul.reviews li{
+    font-size: 200%;
+  }
+  
+  main h1{
+    font-size: 350%;
+  }
+
+  main h2{
+    font-size: 250%;
+    margin-left: 3%;
+  }
+  
+  main h4{
+    margin-left: 3%;
+  }
+/****************** Section (menu) ********************/
+  body main section.mainInfo{
+    margin: 5% 5% 0 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5px;
+    padding-bottom: 5%;
+   } 
+ 
+  article.recipes{
+    max-width: 47%;
+  }  
+/****************** footer ***************/
+footer>p {
+    font-size: 100%;
+}
+
+}

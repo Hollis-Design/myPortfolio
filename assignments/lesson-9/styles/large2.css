@@ -1,0 +1,181 @@
+@media only screen and (min-width: 64em) {
+/* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+
+  header, nav, main, footer {
+    max-width: none;/* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+  }
+
+/*---------- Navigation ----------*/
+nav{
+      font-size: 100%;
+    }
+
+
+    nav ul li a{
+    padding: .6rem 1rem;
+
+  }
+
+/*---------- Header ------------*/
+
+    header h1 {
+    font-size: 300%;
+    color: black;
+    color: white;
+  }
+
+  header .subheading {
+    font-size: 200%;
+    color: black;
+    color: white;
+  }
+
+/*------Main----------------*/
+
+    body{
+        font-size: 120%;
+   /*     background-color: #8FB180;  */
+        background-color: #667E72;
+        background-color: #B19151;
+
+    }
+
+   main h2{
+        font-size: 180%;
+
+       background-color: #3E9298;
+       background-color: #346E72;
+       color: white;
+    }
+
+    #weather, #greenie {
+        border: #346E72 1px solid;
+        box-shadow: 10px 10px 20px #346E72;
+        padding: 0 .5em;
+        margin: 2% 2% 0 0;
+    }
+
+    #frank, #spring {
+        border: #346E72 1px solid;
+        box-shadow: 10px 10px 20px #346E72;
+        padding: 0 .5em;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+
+    main h3{
+        font-size: 150%;
+    }
+
+    .franklinOverview {
+        display: inline;
+    }
+
+    .summary {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    .franklinPic{
+        width: 100%;
+    }
+
+/******************* Main For Gallery *****************/
+    .weatherPics{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .weatherPics .gridItem:hover{
+      box-shadow: 5px 5px 10px #888888;
+    }
+
+/************** Main For Home Page ********************/
+    #greenie {
+        border: none;
+        box-shadow: none;
+        padding: 0 0;
+        margin: 0 0 0 0;
+    }
+
+    #frank, #spring {
+        border: none;
+        box-shadow: none;
+        padding: 0 0;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .greenvilleOverview, .franklinOver, .springfieldOverview{
+        display: inline;
+        border: #653933 1px solid;
+        box-shadow: 10px 10px 20px gray;
+    }
+
+    #weather {
+        width: 100%;
+    }
+
+    .threeCities {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    .weatherOverview img, .greenvilleOverview img, .franklinOver img, .springfieldOverview img {
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .franklinOver {
+        margin-right: .5em;
+    }
+
+    .greenvilleOverview {
+        margin-right: .5em;
+        margin-left: .5em;
+    }
+
+    .springfieldOverview {
+        margin-left: .5em;
+    }
+
+    .threeCities img {
+        width: 100%;
+    }
+
+/*-------------- Section ------------*/
+  main section.forecast {
+    display: block;
+    max-width: none;
+  }
+/* show the 10-day forecast with the medium view and up */
+
+  table, th, td {
+    border: 1px solid #666666;
+    border-collapse: collapse;
+    text-align: left;
+    padding-bottom: .5em;
+    padding-top: .5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin: auto;
+  }
+
+  footer aside {
+    font-size: 100%;
+  }
+
+  footer>p {
+    font-size: 95%;
+  }
+
+}

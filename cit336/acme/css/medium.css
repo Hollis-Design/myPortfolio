@@ -1,0 +1,194 @@
+@media only screen and (min-width: 37.5em) {/* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+ header .headerItems .folder {
+  font-size: 125%;
+ }  
+/*********** Navigation ****************/
+  nav button { 
+    display: none; } 
+
+
+  nav ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      /*get rid of bullets */
+     /* padding: .8rem 1rem; /*get rid of padding at the top */
+  }
+
+  nav ul.hide{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+li {
+    border-right: none;
+    border-top: none;
+}
+
+nav ul li a{
+  /*  border-collapse: collapse; */
+    padding: .8rem;
+    text-decoration: none;
+}
+
+li:last-child{
+    border-right: none;
+}
+
+nav ul li.active a {
+  background-color: rgba(0,0,0,.2);
+  color: #FFFFFF;
+}
+
+nav ul li a:hover {
+  padding: .8rem;
+  background-color: white;
+}
+    /************** Main *************/
+main h1 {
+  font-size: 300%;
+}
+
+main h2 {
+  font-size: 225%;
+ }
+
+main .get_it_now{
+  margin: 0 0 0 48%;
+  font-size: 215%;
+  padding-top: 4%;
+}
+
+main .get_it_now img{
+  width: 80%;
+}
+  
+  main .rocket_pic{
+  background-image: url("../images/site/rocketfeature.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 25em; 
+}
+
+article.recipes{
+  max-width: 56%;
+}
+
+  ul.reviews li{
+    font-size: 150%;
+  }
+
+  /************* Login Page ******************/
+  legend{
+    padding: .7em;
+    font-size: 120%;
+}
+  
+  label input{
+     display: block;
+     padding: .6em 12em .6em 0;
+     margin-bottom: .5em;
+  }
+  
+  label span{
+    font-size: 120%;
+  }
+  
+  input.submitBtn{
+    margin: 0 0 .7em 1.3em;
+    font-size: 1em;
+    padding: .8em 4.5em;
+ }
+  a.accountBtn {
+    margin: 0 0 0 1.3em; 
+    width: 12em;
+    font-size: 1em;
+    padding: .6em;
+}
+
+/************* For Products Display on Larger Screens **********/
+#prod-display{
+ flex-flow: row wrap;
+ justify-content: flex-start;
+}
+
+#prod-display li{
+ max-width: 200px;
+ flex: 1 0 auto;
+ /*text-align: center; */
+ max-height: 400px;
+}
+
+#prod-display li h2{
+  font-size: 120%;
+}
+
+#prod-display li span{
+  font-size: 100%;
+}
+
+/*********** Display Product Details on Larger Screens *********/
+div.prodDisplay {
+ flex-flow: row nowrap;
+ justify-content: space-between;
+}
+
+.prodImage {
+ flex: 1 0 auto;
+ max-width: 50%;
+ padding: 2% 2% 0 2%;
+}
+
+.prodImage img{
+object-fit: scale-down;
+margin: 0;
+height: auto;
+max-width: 100%;
+}
+
+.prodImage h1 {
+ padding: 0 0 0 2%;
+}
+
+div.prodDetails {
+  max-width: 50%;
+  font-size: 150%;
+ /* text-align: center; */
+  margin: 0 2% 0 2%; 
+}
+
+.prodDetails h3.price {
+   margin: 0;
+ }
+
+ /********************** Featured Product *********************/
+ #overlay {
+  position: initial;
+  display: flex;
+  background-color: rgba(0,0,0,0);
+  z-index: 0;
+}
+
+div.featureDetails{
+  position: initial;
+  top: auto;
+  left: auto;
+  /*max-width: 50%; */
+  text-align: left;
+  margin: 0; 
+  padding: 0;
+  color: black; 
+  transform: none;
+}
+
+div.featureDetails p{
+  font-size: 1.5em;
+  margin: 0 0 3% 0;
+  padding: 0;
+}
+ 
+}

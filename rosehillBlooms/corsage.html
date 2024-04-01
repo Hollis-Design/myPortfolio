@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Rosehill Blooms</title>
+        <meta name="author" content="Christy Hollis">
+        <meta name="description" content="Professional custom floral arrangements in Overland Park, Kansas by Wendy Rindlisbacher">
+        <!-- external style references in the proper cascading order -->
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">   <!-- Google API font reference -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:700i&display=swap" rel="stylesheet">
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium2.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    </head>
+
+    <body onload="todaydate()">
+        <header>
+            <div class="headerItems">
+                <div class="title">
+                    <h1>Rosehill Blooms</h1>
+                    <div class="subheading">Floral Design<br>Overland Park, Kansas</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- site navigation use placeholder references -->
+      <nav>
+            <button onclick="toggleNavMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="boutonniere.html">Boutinnieres</a></li>
+                <li><a href="#">Corsages</a></li>
+               <!-- <li><a href="occasion.html">Occasions</a></li>  -->
+                <li><a href="arrangement.html">Arrangements</a></li>
+         <!--       <li><a href="contactPage.html">About/Contact</a></li>    -->
+                <li class="active"><a href="contactPage.html">Order Now</a></li>
+            </ul>
+        </nav>
+        <main>
+            <article class="flowerPics">
+              <div id="column1"></div>
+              <div id="column2"></div>
+              <div id="column3"></div>
+            </article>
+        </main>
+
+        <footer>
+            <aside>
+                Rosehill Blooms &#9734;
+                Overland Park, KS 66221<br>
+                <a href="https://www.instagram.com/rosehill.blooms/">@rosehill.blooms on Instagram</a><br>
+            </aside>
+            <p class="footer-bar">&copy;2019 All Rights Reserved | Rosehill Blooms | <span id="dateToday"></span></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/displayCorsage2.js"></script>
+    </body>
+    </html>

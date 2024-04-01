@@ -1,0 +1,107 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer {
+    max-width:  37.5em;/* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+    background-color: #33654C;
+    text-align: center;
+    padding: .5rem;
+    color: white;
+    font-family: Georgia;
+}
+
+header img {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    width: 10%;
+}
+
+header h1 {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    font-size: 250%;
+}
+
+
+header .subheading {
+    font-size: 150%;
+}
+
+nav {}
+nav button {}
+nav ul {}
+nav ul li {}
+nav ul li a {}
+nav ul li.active a {}
+nav ul li a:hover {}
+
+main {}
+
+main h2, h3 {
+    background-color: #C8C8C8;
+    color: #653933;
+    color: #6BB18E;
+    text-align: center;
+    padding: .5em;
+}
+
+main figure img {
+    width:100%;
+    margin: auto;
+}
+
+section img {
+    width: 10%;
+}
+
+main .weather .currentweather .current{
+   /* display: flex;
+    flex-direction: row; */
+    font-size: 125%;
+    margin: auto;
+    text-align: center;
+}
+
+main .weather .currentweather .highlow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.conditions {
+    text-align: center;
+}
+
+.forecast{
+    display: none;
+}
+
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: 96%; /* fill the page in the small/phone view */
+    margin: 0 0 .2rem 2%;
+}
+
+footer {
+    background-color: #653933;
+    text-align: center;
+    padding: .5rem;
+    color: white;
+    font-family: Georgia;
+}
+
+footer aside {}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */

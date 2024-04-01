@@ -1,0 +1,164 @@
+@media only screen and (min-width: 37.5em) {
+/* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+  header, nav, main, footer {
+    max-width: 64em;/* the comma means apply the following CSS declarations to all of the listed elements */
+  }
+
+  /*-------------- Header ----------------*/
+  header h1 {
+    font-size: 200%;
+    margin-left: 0%;
+  }
+
+  .headerItems {
+      justify-content: space-around;
+      align-items: flex-end;
+
+    }
+  header .subheading {
+    font-size: 120%;
+    margin-left: 0%;
+  }
+
+  /*********** Navigation ****************/
+  nav button { display:none; }  /* hamburger button does not need to be shown */
+
+  nav{
+    background: #6bb18e; /* Old browsers */
+    background: -moz-linear-gradient(top, #6bb18e 0%, #3b6d4e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #6bb18e 0%,#3b6d4e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #6bb18e 0%,#3b6d4e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6bb18e', endColorstr='#3b6d4e',GradientType=0 ); /* IE6-9 */
+  }
+
+
+   /* li{
+        border-right: 1px solid rgba(0,0,0,.3);
+    }
+    */
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /*get rid of bullets */
+       /* padding: .8rem 1rem; /*get rid of padding at the top */
+    }
+
+
+    nav ul.hide{
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: stretch;
+      justify-content: flex-start;
+    }
+
+    li {
+        border-right: 1px solid rgba(0,0,0,.3);
+        border-top: none;
+    }
+
+    nav ul li a{
+      /*  border-collapse: collapse; */
+        color: black;
+        padding: .8rem;
+        text-decoration: none;
+    }
+
+
+    li:last-child{
+        border-right: none;
+    }
+
+
+/*---------------- Main -----------------*/
+    body{
+        font-size: 100%;
+    }
+
+    main h2{
+        font-size: 150%;
+    }
+
+    h3, h4{
+        font-size: 120%;
+    }
+
+    .franklinOverview{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: stretch;
+    }
+
+    .franklinPic{
+        width: 40%;
+    }
+
+    .summary {
+        width: 60%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-self: center;
+    }
+
+
+    .current {
+        /*  text-align: center;*/
+        font-size: 100%
+    }
+
+    .highlow {
+        order: -1;
+        flex-grow: 0;
+        flex-basis: auto;
+    }
+
+  main section.forecast {
+    display: block;
+    max-width: 64em;
+  }  /* show the 10-day forecast with the medium view and up */
+
+
+  table, th, td {
+    border: 1px solid #666666;
+    border-collapse: collapse;
+    text-align: left;
+    padding-bottom: .5em;
+    padding-top: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: auto;
+  }
+
+    .town-article{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+   article p.town-article img {
+      order: 2;
+      width: 50%;
+  } /* responsive images */
+
+/******************* Main For Gallery *****************/
+    .weatherPics{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 15px;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .weatherPics img{
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+
+}

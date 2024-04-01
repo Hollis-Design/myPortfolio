@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Franklin, Springfield, Greenville Weather</title>
+        <meta name="author" content="Christy Hollis">
+        <meta name="description" content="Weather site for the town of Franklin">
+        <!-- external style references in the proper cascading order -->
+            <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">   <!-- Google API font reference -->
+            <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+            <link href="styles/main-7.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+            <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+            <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+    </head>
+
+    <body onload="todaydate()">
+        <header>
+            <div class="headerItems">
+                <div class="picture">
+                    <a href="index.html"><img src="images/weather-icon3.png" alt="Weather Logo"></a>
+                </div>
+                <div class="title">
+                    <h1>Weather Or Not</h1>
+                    <div class="subheading">Local Weather and News For Franklin, Springfield, &amp; Greenville</div>
+                </div>
+            </div>
+        </header>
+
+<!-- site navigation use placeholder references -->
+        <nav>
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="franklin-7.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li class="active"><a href="#">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Springfield</h2>
+            <div class="franklinOverview">
+                <figure class="franklinPic">
+                    <picture>
+                        <source srcset="images/springfieldSmall.jpg" media="(max-width: 600px)">
+                        <source srcset="images/springfieldMedium.jpg" media="(max-width: 800px)">
+                        <source srcset="images/springfieldLarge.jpg">
+                        <img src="images/springfield.jpeg" alt="Picture of Springfield">
+                    </picture>
+                </figure>
+
+                <div class="summary">
+               <!-- <h3>Weather Summary</h3>  -->
+               <!--     <div class="current"> -->
+                    <div class="highlow">
+                        <div class="current">
+                            <span id="currentWeather"></span>
+                            <picture>
+                                <img id="weatherIcon" src="#" alt="Current Weather">
+                            </picture>
+                        </div>
+                        <p>High: <span id="high">90</span>&deg;F</p>
+                        <p>Low: <span id="low">66</span>&deg;F</p>
+                    </div>
+
+                    <div class="conditions">
+                        <p>Current Temp: <span id="currentTemp"></span>&deg;F</p>
+                        <p>Wind Speed: <span id="speed">5</span> mph <span id="direction"></span></p>
+                        <p>Wind Chill: <span id="chill"></span>&deg;F</p>
+                    </div>
+                </div>
+            </div>
+                <div class="tonight">
+                    <p>Forecast: <span id="forecastText"></span></p>
+                </div>
+
+
+            <section class="forecast">
+                <h3>10 Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <article>
+                <h3>Springfield Breaks Record</h3>
+                <p class="town-article">
+                    <img src="images/springfield-recordOptimize.jpg" alt="Record-breaking Picture of Springfield">
+
+                    Lorem ipsum dolor sit amet, vix ex regione appetere partiendo, mei te quas errem eleifend. Inermis luptatum eum an. Facer diceret usu no, eius tollit eam ea. Tamquam deseruisse cu eam, vim ne doming nostrum. Quo eu debitis noluisse, ludus voluptaria mei ei.
+
+                    Ad eum porro delenit, cu eam quodsi intellegebat, ad ludus eloquentiam sed. Ne eum velit affert, sumo adipiscing in pri. Te his reprimique signiferumque, qui congue oportere sapientem ei. Vel sale nihil munere ea, in mel quando recteque consequat. Urbanitas elaboraret mediocritatem eu vix, per nulla consul an.
+                </p>
+            </article>
+        </main>
+
+        <footer>
+            <aside>
+                Weather or Not<br>
+                123 Main St.<br>
+                Franklin, MU 83454<br>
+                (999)999-9999<br>
+                contact@url.com<br>
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved | Site Title | <span id="dateToday"></span></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/wu-weatherSpring.js"></script>
+
+    </body>
+</html>

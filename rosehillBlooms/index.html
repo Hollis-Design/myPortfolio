@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Rosehill Blooms</title>
+        <meta name="author" content="Christy Hollis">
+        <meta name="description" content="Professional custom floral arrangements in Overland Park, Kansas by Wendy Rindlisbacher">
+        <!-- external style references in the proper cascading order -->
+            <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">   <!-- Google API font reference -->
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+            <link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
+            <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+            <link href="https://fonts.googleapis.com/css?family=Lato:700i&display=swap" rel="stylesheet">
+            <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+            <link href="styles/medium2.css" rel="stylesheet">  <!-- medium/tablet views -->
+            <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    </head>
+
+    <body onload="todaydate()">
+        <header>
+            <div class="headerItems">
+                <div class="icon">
+        <!--          <picture>
+                    <source srcset="images/rosehillIcon-small.jpg" media="(max-width: 37.5em)">
+                        <source srcset="images/rosehillIcon-medium.jpg" media="(max-width: 64em)">
+                        <source srcset="images/rosehillIcon-large.jpg">
+                        <img src="images/rosehillIcon-large.jpg" alt="Rosehill Blooms Logo">
+                    </picture>     -->
+                </div>
+                <div class="title">
+                    <h1>Rosehill Blooms</h1>
+                </div>
+                <div class="subheading">Floral Design<br>Overland Park, Kansas</div>
+            </div>
+        </header>
+
+<!-- site navigation use placeholder references -->
+       <nav>
+            <button onclick="toggleNavMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="boutonniere.html">Boutinnieres</a></li>
+                <li><a href="corsage.html">Corsages</a></li>
+               <!-- <li><a href="occasion.html">Occasions</a></li>  -->
+                <li><a href="arrangement.html">Arrangements</a></li>
+         <!--       <li><a href="contactPage.html">About/Contact</a></li>    -->
+                <li class="active"><a href="contactPage.html">Order Now</a></li>
+            </ul>
+        </nav>
+
+        <main>
+          <div class="options">
+            <div class="websiteBody1">
+                <article class="boutt">
+                    <a href="boutonniere.html">
+                        <picture>
+                            <source srcset="images/bout-corsage/boutt-TN-small.jpg" media="(max-width: 37.5em)">
+                            <source srcset="images/bout-corsage/boutt-TN-medium.jpg" media="(max-width: 64em)">
+                            <source srcset="images/bout-corsage/boutt-TN-large.jpg">     
+                            <img src="images/bout-corsage/bouttIcon-TN.jpg" alt="Picture of bouttoniere">
+                        </picture>
+                        <div class="thumbnail">Boutonnieres</div>
+                    </a>
+                </article>
+                  
+                <article class="corsage">
+                    <a href="corsage.html">
+                        <picture>
+                            <source srcset="images/bout-corsage/corsage-TN-small.jpg" media="(max-width: 37.5em)">
+                            <source srcset="images/bout-corsage/corsage-TN-medium.jpg" media="(max-width: 64em)">
+                            <source srcset="images/bout-corsage/corsage-TN-large.jpg">   
+                            <img src="images/bout-corsage/corsage-TN-large.jpg" alt="Picture of corsage">
+                        </picture>
+                        <div class="thumbnail">Corsages</div>
+                    </a>
+                </article>
+            </div>
+            
+            <div class="websiteBody2">
+                 <article class="arrangement">
+                      <a href="arrangement.html">
+                          <picture>
+                              <source srcset="images/arrangement/arrangement-small.jpg" media="(max-width: 37.5em)">
+                              <source srcset="images/arrangement/arrangement-medium.jpg" media="(max-width: 64em)">
+                              <source srcset="images/arrangement/arrangement-large.jpg">
+                              <img src="images/arrangement/arrangement-large.jpg" alt="Picture of floral arrangement">
+                          </picture>
+                          <div class="thumbnail">Arrangements</div>
+                      </a>
+                  </article>
+
+                <article class="wedding">
+                  <!--  <a href="occasion.html">
+                        <picture>
+                            <source srcset="images/wedding/weddingIcon-small.jpg" media="(max-width: 37.5em)">
+                            <source srcset="images/wedding/weddingIcon-medium.jpg" media="(max-width: 64em)">
+                            <source srcset="images/wedding/weddingIcon-large.jpg">
+                            <img src="images/wedding/weddingIcon.jpg" alt="Picture of wedding flowers">
+                        </picture>
+                        <div class="thumbnail">Occasions</div>
+                    </a>    -->
+                </article>
+                </div>
+            </div>
+        </main>
+
+       <footer>
+            <aside>
+                Rosehill Blooms &#9734;
+                Overland Park, KS 66221<br>
+                <a href="https://www.instagram.com/rosehill.blooms/">@rosehill.blooms on Instagram</a><br>
+            </aside>
+            <p class="footer-bar">&copy;2019 All Rights Reserved | Rosehill Blooms | <span id="dateToday"></span></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+
+    </body>
+</html>
+
+

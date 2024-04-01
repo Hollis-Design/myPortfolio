@@ -1,0 +1,139 @@
+@media only screen and (min-width: 64em) {
+/* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+
+  header, nav, main, footer {
+    max-width: none;/* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+  }
+
+/************ Navigation **********************/
+    nav{
+      font-size: 100%;
+    }
+
+    nav ul li a{
+    padding: .6rem 1rem;
+  }
+
+/********************* Header **********************/
+  header h1 {
+    font-size: 300%;
+  }
+
+  header .subheading {
+    font-size: 200%;
+  }
+
+/***************** Main *****************************/
+    body{
+        font-size: 120%;
+    }
+
+   main h2{
+        font-size: 180%;
+    }
+
+    main h3{
+        font-size: 150%;
+    }
+
+
+/******************* Main For Gallery *****************/
+    .weatherPics{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .weatherPics .gridItem:hover{
+      box-shadow: 5px 5px 10px #888888;
+    }
+
+/****************** Home Page  ***************/
+
+    .cycleDivide{
+        flex-basis: 100%;
+        margin: 0;
+        padding: 2% 1%;
+    }
+
+    .cycleDivide{
+        background-image: url("../images/bike-montana2-flip-large.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .saleService{
+        flex-basis: 32%;
+        margin: 2% 1% 2% 0;
+    }
+
+    .events{
+        flex-basis: 32%;
+        margin: 2% 0 2% 1%;
+    }
+
+    .tours{
+        flex-basis: 32%;
+        margin: 2% 1% 2% 1%;
+    }
+
+/******************* Event Page **********************/
+    .cycleDivideEvent h2{
+        padding-top: 10%;
+        font-size: 350%;
+    }
+
+    .cycleDivideEvent h3{
+        font-size: 250%;
+    }
+
+    .cycleDivideEvent{
+        background-image: url("../images/eventPage-large.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+/******************* Contact Us **********************/
+    .formInfo{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+
+    fieldset {
+        flex-basis: 50%;
+    }
+
+
+/****************** Sales Page *****************************/
+    .navigation > li {
+        width: 20%;
+        left: -15%;
+        padding: 2.5%;
+        border-right: 3rem solid #48817D;
+        -webkit-transition: left 600ms;
+        -moz-transition: left 600ms;
+        -ms-transition: left 600ms;
+        -o-transition: left 600ms;
+        transition: left 600ms;
+    }
+
+    li.openSesame {
+        left:0px;
+    }
+
+    article.detail{
+       margin: 0 10% 2% 10%;
+    }
+
+    .forSale{
+        background-image: url("../images/bike-montana2-flip-large.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+}

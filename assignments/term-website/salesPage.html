@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Mountain Spoke</title>
+        <meta name="author" content="Christy Hollis">
+        <meta name="description" content="Everything Mountain biking tours and rentals in Bozeman, Montana">
+        <!-- external style references in the proper cascading order -->
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">   <!-- Google API font reference -->
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main-7.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+        <!-- <link rel="stylesheet" href="styles/salesPage.css">  for slider menu -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+        <script>
+            $(function(){
+                // All jQuery code goes here
+                $('.navigation > li').hover(function(){
+                    //This code executes when mouse hovers over element
+                    $(this).addClass('openSesame');
+                },
+                                            function() {
+                    //This code executes when mouse leaves the element
+                    $(this).removeClass('openSesame');
+                });
+            })
+        </script>
+
+    </head>
+
+    <body onload="todaydate()">
+        <header>
+            <div class="headerItems">
+                <figure class="icon">
+                    <picture>
+                        <source srcset="images/small.png" media="(max-width: 37.5em)">
+                        <source srcset="images/medium.png" media="(max-width: 64em)">
+                        <source srcset="images/large.png">
+                        <img src="images/large.png" alt="Weather Logo">
+                    </picture>
+                    <!--<a href="index.html"><img src="images/mtspoke-icon.png" alt="Weather Logo"></a> -->
+                </figure>
+
+                <div class="title">
+                    <h1>The Mountain Spoke</h1>
+                    <div class="subheading">Everything Mountain Bikes in Bozeman, Montana</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- site navigation use placeholder references -->
+        <nav>
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adventureToursPage.html">Adventure Tours</a></li>
+                <li><a href="eventPage.html">Events</a></li>
+                <li class="active"><a href="#">Sales</a></li>
+                <li><a href="servicePage.html">Service</a></li>
+                <li><a href="contactPage.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+           <article class="forSale">
+                <ul class="navigation">
+                    <li><a href="bicycle1.html">Barghest</a></li>
+                    <li><a href="bicycle2.html">Spectral 9.0</a></li>
+                    <li><a href="bicycle3.html">Spectral 8.0</a></li>
+                </ul>
+               <h3>Click tabs above for more information on
+                   a specific bike model.</h3>
+            </article>
+            <div class="bikeSell">
+                <article class="barghest">
+                   <picture>
+                       <img src="images/Barghest-minimized.jpg" alt="Picture of Heller Barghest NX">
+                   </picture>
+                   <h3>Heller Barghest NX</h3>
+               </article>
+               <article class="spectral1">
+                   <picture>
+                       <img src="images/spectral-minimized.jpg" alt="Picture of Canyon Spectral CF 9.0 SL">
+                   </picture>
+                   <h3>Canyon Spectral CF 9.0 SL</h3>
+               </article>
+               <article class="spectral2">
+                   <picture>
+                       <img src="images/spectral2-minimize.jpg" alt="Picture of Canyon Spectral 8.0 Pro">
+                   </picture>
+                   <h3>Canyon Spectral 8.0 Pro</h3>
+               </article>
+            </div>
+        </main>
+
+        <footer>
+            <aside>
+                Mountain Spoke &#9734;
+                123 Main St. &#9734;
+                Bozeman, MT 59715<br>
+                (406)518-9418 &#9734;
+                Info@MtSpoke.com<br>
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved | Mountain Spoke | <span id="dateToday"></span></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+
+    </body>
+    </html>
